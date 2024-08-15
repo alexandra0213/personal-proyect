@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap,wght@0,400;0,700;1,400&display=swap');
+
+  
+
+body {
+    font-family: "Titan One", serif;
+    background: url(https://i.pinimg.com/originals/67/0d/08/670d0883e7e520c3acec09a485370e88.gif);
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Necesario para el posicionamiento del encabezado fijo */
+}
+
+
+.encabezado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Espacio interno en la parte superior e inferior */
+    z-index: 1000; /* Asegúrate de que el encabezado esté encima de otros elementos */
+
+    color: white;
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000; /* Borde de 1px en negro */
+}
+.section {
+    display: none; 
+}
+
+.hide {
+    display: none;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 70%;
+    width: 70;
+
+
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px; /* Espacio entre el contenedor de la contraseña y la imagen */
+}
+
+.password-input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* Aumenta el tamaño de las columnas */
+    grid-gap: 15px; /* Espacio entre los botones */
+    justify-content: center; /* Centra el teclado dentro del contenedor */
+}
+.eliminar{
+    width: 300px; /* Tamaño aumentado de los botones */
+    height: 50px; /* Tamaño aumentado de los botones */
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    font-family: "Titan One", serif;
+    cursor: pointer;
+
+}
+
+.keypad button {
+    width: 80px; /* Tamaño aumentado de los botones */
+    height: 80px; /* Tamaño aumentado de los botones */
+    font-size: 20px; /* Tamaño de fuente aumentado para mejor visibilidad */
+    font-family: "titan One", serif;/* Usa la fuente especificada */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados más pronunciados */
+    background-color: #fff; /* Color de fondo de los botones */
+    border: 2px solid #000; /* Borde más grueso */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.keypad button:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+
+.entrar{
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    
+    width: 370px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    font-family: "Titan One", serif;
+    cursor: pointer;
+}
+.entrar:hover {
+    transform: scale(1.1);
+  }
+
+.image-container {
+    margin-left: 20px;
+}
+
+.image-container img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px ;
+    
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+} 
+
+/* styles.css */
+.section {
+    display: flex; /* Utiliza flexbox para organizar los elementos en la sección */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    color: black; /* Color de texto blanco */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho y alto */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row; /* Organiza la imagen y el texto en fila */
+    justify-content: flex-end; /* Alinea el contenido al lado derecho */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.contenido p {
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0 20px; /* Espaciado interno horizontal */
+    text-align: left; /* Alinea el texto a la izquierda dentro del párrafo */
+    max-width: 50%; /* Limita el ancho del texto para evitar que ocupe toda la pantalla */
+}
+
+.syb {
+    max-width: 50%; /* Limita el ancho de la imagen para que no ocupe toda la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espaciado derecho entre la imagen y el texto */
+    border-radius: 50px;
+    box-shadow: 40px darkred;
+}
+
+.fecha {
+    font-size: 2rem; /* Tamaño de fuente grande para el título */
+    margin: 0; /* Elimina márgenes por defecto */
+}

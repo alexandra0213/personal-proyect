@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <div class="encabezado">
+        <h1>¡Introduce la fecha de nuestro aniversario!</h1>
+    </div>
+    <div class="container" id="container">
+        <div class="password-container">
+            <input type="password" id="passwordInput" class="password-input" readonly>
+            <div class="keypad">
+                <button onclick="addDigit(1)">1</button>
+                <button onclick="addDigit(2)">2</button>
+                <button onclick="addDigit(3)">3</button>
+                <button onclick="addDigit('*')">*</button>
+                <button onclick="addDigit(4)">4</button>
+                <button onclick="addDigit(5)">5</button>
+                <button onclick="addDigit(6)">6</button>
+                <button onclick="addDigit(0)">0</button>
+                <button onclick="addDigit(7)">7</button>
+                <button onclick="addDigit(8)">8</button>
+                <button onclick="addDigit(9)">9</button>
+                <button onclick="addDigit('#')">#</button>
+            </div>
+            <div>
+                <button onclick="clearInput()" class="eliminar">Eliminar</button> 
+                <button onclick="submitPassword()" class="entrar">Entrar</button>
+                <div id="error" class="error"></div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/564x/f8/da/16/f8da16d961b88ed0edf0c3cc73cb573c.jpg" alt="Imagen de ejemplo">
+        </div>
+    </div>
+    
+    <div id="section2" class="section" style="display: none;">
+        <h3 class="fecha">NUESTRA FECHA ESPECIAL</h3>
+        <div class="contenido">
+            <p>¡Hola mi niño! ¿Qué es esto? Bueno,sabes que actualmente estuve aprendiendo programación y decidí hacerte un pequeño regalo por nuestro aniversario aquí verás diferentes cosas sobre nuestra relación,espero esté pequeño detalle sea de tu agrado.
+                Eres alguien muy especial para mí,quien me complementa y es mi mano derecha en la vida,siempre estaré agradecida por tu apoyo y amor incondicional así que esta es una pequeña forma de retribución por todo lo que haces.
+                Ahora debe ser...¿7 de noviembre,no? Me alegro de haber llegado hasta este momento con usted.
+                Siempre tenemos discusiones y problemas pero somos fuertes y el amor puede superar cualquier problema.
+                Algo gracioso es que ahora mismo que estoy escribiendo esto,estás trabajando y me dejaste cuidando a rayo pero aquí estamos,siempre esperando a papá Fran para que nos cuide y alimente,jajajaj.</p>
+            <img src="https://i.pinimg.com/564x/d9/95/e5/d995e5c56b825ffd5df0a9c152391a0f.jpg" alt="decoracion" class="syb">
+        </div>
+        <div>
+            <h1>Playlist para usted mi amor:</h1>
+            <ol>
+                <li><a href="https://youtu.be/R5cbxTPZNL0?si=CkU9EUHgVzBwUPpm" target="_blank">"Enamorado Tuyo"</a></li>
+                <li><a href="https://youtu.be/1kCnfEUHZHs?si=wxC2CO8YDP2fbceK" target="_blank">"everything in you"</a></li>
+                <li><a href="https://youtu.be/bLojUhnV_RQ?si=b96fx5i_seBxk6wA" target="_blank">"Amor Completo"</a></li>
+                <li><a href="https://www.example.com/page4" target="_blank">Enlace 4</a></li>
+                <li><a href="https://www.example.com/page5" target="_blank">Enlace 5</a></li>
+                <li><a href="https://www.example.com/page6" target="_blank">Enlace 6</a></li>
+                <li><a href="https://www.example.com/page7" target="_blank">Enlace 7</a></li>
+                <li><a href="https://www.example.com/page8" target="_blank">Enlace 8</a></li>
+                <li><a href="https://www.example.com/page9" target="_blank">Enlace 9</a></li>
+                <li><a href="https://www.example.com/page10" target="_blank">Enlace 10</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="assets/script/java.js"></script>
+</body>
+</html>
+
+
